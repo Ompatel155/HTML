@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bar{
+            height: 50px;
+            border: 2pc solid wheat;
+             display: flex;
+             gap:50px;
+        }
+        .first{
+           
+            justify-content: center;
+            justify-content: space-evenly;
+            align-content: center;
+            
+        }
+        #one{
+            flex-basis: 100px;
+        }
+        #six{
+            flex-basis: 600px;
+        }
+        #seven{
+            justify-content: end;
+            background-color:green;
+            border-radius: 25px;
+            width:100px;
+           
+        }
+        @media screen and (max-width:500px) {
+            #bar{
+                display: flex;
+                align-items: center;
+                align-content: space-evenly;
+                 flex-direction:row;
+            
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <div  id="one" class="first">Navbar</div>
+        <div id="two" class="first">Home</div>
+        <div  id="three" class="first">Link</div>
+        <div  id="five" class="first">Disbled</div>
+        <select id="four" class="first">Dropdown</select>
+        <label id="six" for="on" class="first"></label>
+        <input id="on"placeholder="search">
+        <button id="seven" class="first" >search</button>
+
+    </div>
+</body>
+</html>

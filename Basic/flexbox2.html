@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #parent{
+        height: 500px;
+        width: 100vw;
+        border:  2px solid  black;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* align-content: space-evenly; */
+        gap: 3px;
+        position: relative;
+        top:150px;
+        background-color: wheat;
+
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(25, 13, 198);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #demo{
+        display: flex;
+
+        justify-content: center;
+        position:relative;
+        top:100px;
+    background-color: rgb(122, 166, 180);
+    }
+    #color{
+        background-color: mistyrose;
+    }
+    #one{
+        /* aakele box ka size badane ke liye */
+        /* flex-basis: 500px; */
+        /*  jis box me lagate hai us */
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #three{
+        flex-shrink: 3;
+    }
+    </style>
+</head>
+<body id="color">
+    <h1 id="demo">Flexbox parent properties demo</h1>
+   <div id="parent"> 
+    <h1 id="one" class="box">1</h1>
+    <h1 id="two" class="box">2</h1>
+    <h1 id="three" class="box">3</h1>
+    <h1 id="four" class="box">4</h1>
+    <h1 id="five" class="box">5</h1>
+    <h1 id="six" class="box">6</h1>
+    <h1 id="seven" class="box">7</h1>
+    <h1  id="eight" class="box">8</h1>
+
+   </div> 
+</body>
+</html>
