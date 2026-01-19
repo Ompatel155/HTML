@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        #parent{
+            height: 100px;
+            border:2px solid white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           background: linear-gradient(
+                90deg,#8e44ad,#b455c6,#e056a7,#ff6f91
+            );
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap:20px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+        #A{
+            height: 60px;
+            width: 60px;
+            display: flexbox;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: cornsilk;
+           background-color:blueviolet;
+           border-radius: 10px;
+         
+         
+        }
+        #B{
+         font-family: 'Sacramento', cursive;
+       font-size: 46px;
+           color: white;
+           flex-basis: 400px;
+        
+}
+        #C{
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            left: px;
+         font-size: 30px; 
+         color:black;
+         background-color: aqua;
+        }
+        #D{
+      flex-basis: 100px;
+        }
+        #E{
+            flex-basis: 200px;
+        }
+        /*----------------     --------------------- */
+        #child{
+                     font-family: 'Sacramento', cursive;
+       font-size: 25px;
+         color: white;
+         border: 2px solid white;
+         height: 400px;
+           background: linear-gradient(
+                90deg,#8e44ad,#b455c6,#e056a7,#ff6f91
+            );
+            font: optional;
+           border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 100px;
+        }
+        #one{
+            position:;
+           top:-130px;
+            left: 40px;
+        }
+        #two{
+            position: relative;
+            
+        top:-30px;
+         right:160px
+        }
+        #three{
+            position: relative;
+           top: -1px;
+            right: 550px;
+          top:100px
+        }
+        #four{
+            position: relative;
+            color: yellow;
+            bottom: -100px;
+            right: ;
+        }
+        #five{
+            position:relative;
+            bottom: -100px;
+            right :;
+        }
+        #six{
+            position: relative;
+            bottom: -150px;;
+
+        }
+        #seven{
+            position: relative;
+            bottom:-200px;
+            right:10px;
+            font-size: 150px;
+            
+        transition: all o.3s ease;
+        }
+        #eight{
+            position: relative;
+            font-size: 100px;
+            left: 125px;
+            bottom: -250px;
+            filter: blur(2.0px);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <svg id ="A" width="20" height="20" viewBox="0 0 24 24"
+     fill="none" stroke="white" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
+
+  <path d="M2 3h8a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2z"/>
+  <path d="M22 3h-8a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h8z"/>
+
+</svg>
+        <h1 id="B">📚 Kidlearn</h1>
+        <i id="C" class="fa-solid fa-house" width="30px" heigth="30px"></i>
+       <svg id="D" width="30" height="40" viewBox="0 0 24 24"
+     fill="none"
+     stroke="white"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+  <!-- clip top -->
+  <rect x="8" y="2" width="8" height="4" rx="1"/>
+
+  <!-- clipboard body -->
+  <rect x="5" y="4" width="14" height="18" rx="2"/>
+
+  <!-- list dots -->
+  <circle cx="9" cy="10" r="1"/>
+  <circle cx="9" cy="14" r="1"/>
+
+  <!-- list lines -->
+  <line x1="11" y1="10" x2="16" y2="10"/>
+  <line x1="11" y1="14" x2="16" y2="14"/>
+
+</svg>
+        <svg  id="E" width="40" height="50" viewBox="0 0 24 24"
+     fill="none"
+     stroke="white"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+  <!-- head -->
+  <circle cx="12" cy="7" r="4"/>
+
+  <!-- body -->
+  <path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>
+
+</svg>
+        
+        
+    </div>
+    <div id="child">
+        <h2 id="one">Welcome back!</h2>
+        
+        <h2 id="two">Hey Champ! Ready to Learn?🌟</h1>
+        <h3 id="three">You have</h3>
+        <!-- <h3 id="four">3 new assignments</h3>
+        <h3 id="five">waiting for you .</h3>
+        <h2 id="six">Let's make today awesome!</h2>
+        <h1 id="seven" >📝</h1>
+        <h1 id="eight">✨</h1> --> 
+        
+        
+    </div>
+</body>
+</html>h
