@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height:85vh;
+            width:100vw;
+             background: linear-gradient(
+            rgb(85,208,233),white
+            );
+        }
+        .first{
+            position: relative;
+            margin: 0px auto;
+        }
+        #one{
+            left:40px;
+            top:50px;
+            width:500px;
+            color: brown;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           
+        }
+        #two{
+            top: 750px;
+            height: 15vh;
+            width: 100vw;
+            background-color: rgb(13, 86, 13);
+        }
+        #three{
+            position:flex;
+            height: 160px;
+            width:160px;
+            border-radius: 50%;
+            background:linear-gradient(red, orange);
+            left:40vw;
+           bottom:90px;
+
+            animation-name: sun;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+            @keyframes sun {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg) ;
+                }
+            }
+         #four{
+            position: relative;
+           display: flex;
+            justify-content: center;
+            align-content: center;
+            justify-content: space-evenly;
+          bottom: 200px; 
+         }
+         .second div{
+    position: relative;
+}
+        .second{
+            height: 100px;
+            width:60px;
+            border-radius: 50%;
+            margin: 0px auto;
+           /* animation:flyup 6s linear infinite; */
+           animation-name: flyup;
+           animation-duration: 4s;
+           animation-iteration-count: infinite;   
+        }
+        @keyframes flyup {
+            0%{
+                transform: translateY(700px);
+                opacity: 0;
+            }
+            20%{
+                opacity: 1;
+            }
+            100%{
+                ransform: translateY(-200px);
+                opacity: 0;
+            }
+        }
+.second::after{
+    content: "";
+    position: absolute;
+    top: 100%;              /* balloon ke niche */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 35px;
+    background-color: black;
+}
+
+        #A{
+            background-color: rgb(56, 95, 18);
+            animation-timing-function: ease;
+        }
+        #B{
+            background-color: brown;
+            animation-timing-function: ease-in;   
+        }
+        #C{
+            background-color: blueviolet;
+            animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+        }
+        #D{
+            background-color: darkgoldenrod;
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        #E{
+            background-color: brown;
+            animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        #F{
+            background-color: bisque;
+            animation-timing-function: ease-out;
+        }
+        #G{
+            background-color: cadetblue;
+            animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        }
+        
+        #H{
+            background-color: darkblue;
+            animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+    </style>
+</head>
+<body>
+  <div id="parent">
+    <h1 id="one" class="first">🎉Welcome to Balloon Festival🎈</h1>
+    <div id="two" class="first"></div>
+    <div id="three" class="first"></div>
+    <div id="four" class="first">
+        <div id="A" class="second"></div>
+        <div id="B" class="second"></div>
+        <div id="C" class="second"></div>
+        <div id="D" class="second"></div>
+        <div id="E" class="second"></div>
+        <div id="F" class="second"></div>
+        <div id="G" class="second"></div>
+        <div id="H" class="second"></div>
+    </div> 
+  </div> 
+  
+</body>
+</html>

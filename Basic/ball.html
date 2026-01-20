@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: linear-gradient(
+                90deg,#8e44ad,#b455c6,#e056a7,#ff6f91
+            );
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: 0px auto;
+            animation-iteration-count:infinite;
+            animation-name:any;
+            animation-timing-function: ease-in;
+            animation-duration: 900ms;
+            animation-direction: alternate;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        @keyframes any {
+           0%{
+              transform: translateY(0px);  
+           }
+          100%{
+              transform: translateY(85vh) rotate(360deg);  
+           }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
