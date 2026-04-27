@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,9 @@
         body{
             background-color: rgb(182, 185, 221);
              
+            
         }
+        
         .nev{
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             background-color: blanchedalmond;
@@ -17,7 +19,9 @@
             border: 2px solid black;
             padding: 10px;
             margin: auto;
-            position:static;
+            position:sticky;
+            top:0;
+            top: 0px;
             border-radius: 30px;
         }
     ul li{
@@ -55,9 +59,9 @@
     height: 450px;
     width: 400px;
     border: 2px solid whitesmoke;
-    position: relative;
-    top:-400px;
-    left: 700px;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     margin-left: 700px;
+    margin-top: -400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 20%;
    
 }
@@ -70,8 +74,9 @@
     text-shadow: 2px 2px 4px black ;
     margin: auto;
     text-align: center;
-     font: size 100px;position: relative;
-     top:-300px;
+     font: size 100px;
+      margin-top: 100px;
+     
 
 
 }
@@ -88,6 +93,7 @@
             <li>Contact Us</li>
             <li></li>
             <li id="search">Search   :<input type="text" placeholder="type....." width="500px" ></li>  
+        </ul>
     </div>
 
 
@@ -101,6 +107,122 @@
     <div class="box2"></div>
     <div class="box3"><h1>Welcome to this sigma web Development Express😁😁</h1></div>
     
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Layout</title>
+
+<style>
+body{
+    background-color: rgb(182, 185, 221);
+    margin: 0;
+}
+
+/* NAVBAR */
+.nev{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: blanchedalmond;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.nev ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nev li{
+    list-style: none;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* FLOAT IMAGE */
+.image{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.image img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* BOX CONTAINER */
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* BOXES */
+.box{
+    height: 450px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 20%;
+    box-shadow: rgba(0,0,0,0.25) 0px 54px 55px;
+}
+
+/* BOTTOM BOX */
+.box3{
+    height: 100px;
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid whitesmoke;
+    box-shadow: rgba(0,0,0,0.25) 0px 54px 55px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nev">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li>Search: <input type="text" placeholder="type..."></li>
+    </ul>
+</div>
+
+<!-- FLOAT BUTTON -->
+<div class="image">
+    <img src="https://media.istockphoto.com/id/1397763147/photo/shield-check-mark-icon-3d-illustration-security-guaranteed-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=oXbSOmpz6erNltcBGWjLww03qWRB6V0R5mwKkZW_s48=">
+</div>
+
+<!-- BOXES -->
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<!-- BOTTOM -->
+<div class="box3">
+    <h2>Welcome to this Sigma Web Development 😁</h2>
+</div>
 
 </body>
 </html>
