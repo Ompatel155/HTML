@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+        input{
+            
+            color: black;
+             text-shadow: 2px 2px 4px black;
+        }
+        button{
+            background-color: aqua;
+             text-shadow: 2px 2px 4px black;
+        }
+        input{
+            height: 40px;
+            width:300px;
+        }
+       legend{
+         text-shadow: 2px 2px 4px black;
+        font-size: 60px;
+       }
+        fieldset{
+            
+            margin: 30px;
+            padding: 20px;
+            height: 500px;
+            width: 500px;
+             background-color: antiquewhite;
+             border: 2px solid black;
+             border-radius: 10%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        button{
+            position: relative;
+            left:100px;
+            bottom: -20px;
+            height: 30px;
+            width: 100px;
+        }
+        .A:hover{
+            
+       transform: scale(1.2);
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgb(14, 29, 104);
+    }
+    </style>
+   
+</head>
+<body>
+
+    <fieldset class="A">
+        <legend>sign-up..</legend>
+<form id="formData">
+    <input type="text" placeholder="Enter your name">
+</br>
+</br>
+    <input type="text" placeholder="Enter your email">
+</br>
+</br>
+    <input type="text" placeholder="Enter your password">
+</br>
+</br>
+    <button type="submit">submit</button>
+    </form>
+    </fieldset>
+
+    <fieldset class="A">
+        <legend>login..</legend>
+<form id="LoginData">
+    
+    <input type="text" placeholder="Enter your email">
+</br>
+</br>
+    <input type="text" placeholder="Enter your password">
+</br>
+</br>
+    <button type="submit">submit</button>
+    </form>
+    </fieldset>
+    <script src="loginpage.js"></script>
+</body>
+</html>
